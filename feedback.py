@@ -3,11 +3,11 @@ import streamlit as st
 st.title("Candidate Feedback")
 
 feedback_options = {
-    "Excellent": "",
-    "Good": "",
-    "Average": "",
-    "Bad": "",
-    "Very bad": ""
+    "Excellent": "🌟",
+    "Good": "👍",
+    "Average": "😐",
+    "Bad": "👎",
+    "Very bad": "💔"
 }
 
 # feedback selection with corresponding emojis
@@ -25,5 +25,3 @@ if st.button('Submit'):
         st.info("We appreciate your feedback. We will strive to improve.")
     else:
         st.error("We're sorry to hear that. Please provide more details in the comment.")
-
-
